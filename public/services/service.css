@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(300deg, #5b078b, #bfc0c0);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 1vh;
+}
+
+input {
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    min-width: 300px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.weather {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.weather h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+h1 {
+    color: wheat;
+}
+
+h3 {
+    color: skyblue;
+}
+
+p {
+    color: lightgreen;
+    text-align: justify;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: arial;
+    text-align: left;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+ul.topnav li {
+    float: left;
+}
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    font-size: 17px;
+    border-right: 1px solid #bbb;
+}
+ul.topnav li a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+ul.topnav li a.active {
+    background-color: #4caf50;
+}
+ul.topnav li.right {
+    float: right;
+}
+@media screen and (max-width: 720px) {
+    ul.topnav li {
+        width: 100%;
+    }
+    ul.topnav a {
+        width: 100%;
+    }
+}
